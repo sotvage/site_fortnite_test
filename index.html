@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Fortnite cup assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="IMG/logo .jpg" alt="Fortnite cup assistant">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue sur Fortnite cup assistant</h1>
+                <p>Découvrez tous ce qu'il faut savoir sur les cups Fortnite</p>
+                <button class="cta-button">En savoir plus</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+                <span class="indicator" data-index="4"></span>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card" id="service1">
+                    <h3>Le calendrier des cups</h3>
+                    <a href="https://www.fortnite.com/competitive/schedule?lang=fr&region=EU" class="service-button" target="_blank" rel="noopener noreferrer">Voir le calendrier</a>
+                </div>
+                <div class="service-card" id="service2">
+                    <h3>La map </h3>
+                    <a href="https://fortnite.gg/" class="service-button" target="_blank" rel="noopener noreferrer">Consulter la map</a>
+                </div>
+                <div class="service-card" id="service3">
+                    <h3>Pixel drop</h3>
+                    <a href="https://www.landingtutorial.com/" class="service-button" target="_blank" rel="noopener noreferrer">Accéder au tutoriel</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="about">
+            <h2>À Propos</h2>
+            <p>La compétition sur Fortnite repose sur un principe simple : les joueurs s'affrontent pour obtenir le meilleur classement et accumuler un maximum de points. Chaque partie récompense les éliminations, la survie et la position finale, ce qui encourage à la fois l'agressivité et la stratégie.</p>
+            
+            <p>Les tournois officiels se déroulent souvent en plusieurs manches, où la régularité est essentielle pour rester en tête du classement général. Certains événements utilisent un format en solo, d'autres en duo ou en équipe, chacun demandant une coordination différente.</p>
+            
+            <p>L'objectif final reste identique : prouver sa maîtrise du jeu et dominer la compétition.</p>
+            
+            <div class="video-container">
+                <video controls>
+                    <source src="vidéo/fortnite.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form" action="https://formsubmit.co/bail.alexis052023@gmail.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="Nouveau message depuis Fortnite Cup Assistant">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_language" value="fr">
+                
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" id="email" placeholder="Votre email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Veuillez entrer une adresse email valide (exemple: nom@exemple.com)" required>
+                <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fortnite Cup Assistant. Tous droits réservés.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
